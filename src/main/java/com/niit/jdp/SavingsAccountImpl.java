@@ -9,6 +9,10 @@
 package com.niit.jdp;
 
 public class SavingsAccountImpl {
+    /**
+     * The above function is the main function which is used to create an object of the class SavingsAccount and to call
+     * the methods of the class SavingsAccount.
+     */
     public static void main(String[] args) {
         SavingsAccount savingsAccount = new SavingsAccount("indianOverSeas", "karimnagar", "234/235/kmr", "ioba332201", "23/08/2022", "ofline", true, 1234455566, "M vamshi krishna", 50000.0, "Active");
         System.out.println(savingsAccount.getBankName());
