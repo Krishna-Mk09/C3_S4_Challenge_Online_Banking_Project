@@ -55,5 +55,24 @@ public class SavingsAccount extends Bank {
 
     public void setAccountStatus(String accountStatus) {
         this.accountStatus = accountStatus;
+
+    }
+
+    public double creditCash(double cash) {
+
+        double credit;
+        return credit = accountBalance + cash;
+    }
+
+    public double debitCash(double cash) {
+
+        double debit;
+        return debit = accountBalance - cash;
+    }
+
+    public double retrieveBalance(double cash) {
+
+        return accountBalance;
     }
 }
+
