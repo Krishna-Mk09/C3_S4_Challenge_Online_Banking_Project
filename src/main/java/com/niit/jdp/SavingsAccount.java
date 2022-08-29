@@ -13,4 +13,7 @@ public class SavingsAccount {
     private String accountHoldersName;
     private double accountBalance;
     private String accountStatus;
+
+    public SavingsAccount() {
+    }
 }
