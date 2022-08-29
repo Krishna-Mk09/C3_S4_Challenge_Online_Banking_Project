@@ -23,4 +23,36 @@ public class Bank {
         this.address = address;
         this.isfcCode = isfcCode;
     }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
+
+    public String getBranchName() {
+        return branchName;
+    }
+
+    public void setBranchName(String branchName) {
+        this.branchName = branchName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getIsfcCode() {
+        return isfcCode;
+    }
+
+    public void setIsfcCode(String isfcCode) {
+        this.isfcCode = isfcCode;
+    }
 }
