@@ -24,4 +24,36 @@ public class SavingsAccount extends Bank {
         this.accountBalance = accountBalance;
         this.accountStatus = accountStatus;
     }
+
+    public long getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(long accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountHoldersName() {
+        return accountHoldersName;
+    }
+
+    public void setAccountHoldersName(String accountHoldersName) {
+        this.accountHoldersName = accountHoldersName;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
+    }
 }
