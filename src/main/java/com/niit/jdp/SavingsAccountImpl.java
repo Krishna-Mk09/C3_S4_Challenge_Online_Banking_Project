@@ -19,5 +19,17 @@ public class SavingsAccountImpl {
                 , "vamshi"
                 , 5000.0
                 , "active");
+        System.out.println(savingsAccount.toString());
+        System.out.println(bank.getBankName());
+        System.out.println(bank.getAddress());
+        System.out.println(bank.getBranchName());
+        System.out.println(bank.getIsfcCode());
+        System.out.println(savingsAccount.getAccountBalance());
+        System.out.println(savingsAccount.getAccountNumber());
+        System.out.println(savingsAccount.getAccountHoldersName());
+        System.out.println("balance after debit : " + savingsAccount.debitCash(500.0));
+        System.out.println("balance after credited : " + savingsAccount.creditCash(1000.0));
+        System.out.println("your balance is : " + savingsAccount.retrieveBalance(savingsAccount.getAccountBalance()));
     }
+
 }
