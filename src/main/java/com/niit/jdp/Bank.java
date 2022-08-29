@@ -16,4 +16,11 @@ public class Bank {
 
     public Bank() {
     }
+
+    public Bank(String bankName, String branchName, String address, String isfcCode) {
+        this.bankName = bankName;
+        this.branchName = branchName;
+        this.address = address;
+        this.isfcCode = isfcCode;
+    }
 }
