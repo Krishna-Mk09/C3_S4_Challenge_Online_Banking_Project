@@ -9,4 +9,9 @@
 package com.niit.jdp;
 
 public class Bank {
+    private String bankName;
+    private String branchName;
+    private String address;
+    private String isfcCode;
+
 }
