@@ -10,11 +10,22 @@ package com.niit.jdp;
 
 public class SavingsAccountImpl {
     public static void main(String[] args) {
-        SavingsAccount savingsAccount = new SavingsAccount("overseas", "hyderabad", "6347/3434/karimnagar", "ioba3322", 131234345, "vamshi", 5000.0, "active");
-        System.out.println(savingsAccount);
-        System.out.println(savingsAccount.getAccountBalance());
+        SavingsAccount savingsAccount = new SavingsAccount("indianOverSeas"
+                , "karimnagar"
+                , "234/235/kmr", "ioba332201"
+                , "23/08/2022", "ofline"
+                , true, 1234455566, "M vamshi krishna"
+                , 50000.0, "Active");
+        System.out.println(savingsAccount.getBankName());
+        System.out.println(savingsAccount.getBranchName());
+        System.out.println(savingsAccount.getAddress());
+        savingsAccount.getIsfcCode();
+        savingsAccount.getAccountOpeningDate();
+        System.out.println(savingsAccount.getModeOfOperation());
         System.out.println(savingsAccount.getAccountNumber());
         System.out.println(savingsAccount.getAccountHoldersName());
+        savingsAccount.getAccountBalance();
+        System.out.println(savingsAccount.getAccountStatus());
         System.out.println("balance after debit : " + savingsAccount.debitCash(500.0));
         System.out.println("balance after credited : " + savingsAccount.creditCash(1000.0));
         System.out.println("your balance is : " + savingsAccount.retrieveBalance(savingsAccount.getAccountBalance()));

@@ -16,11 +16,15 @@ public abstract class Bank {
     private String accountOpeningDate;
     private String modeOfOperation;
     private boolean isMobileBankingEnabled;
+    private long accountNumber;
+    private String accountHoldersName;
+    private double accountBalance;
+    private String accountStatus;
 
     public Bank() {
     }
 
-    public Bank(String bankName, String branchName, String address, String isfcCode, String accountOpeningDate, String modeOfOperation, boolean isMobileBankingEnabled) {
+    public Bank(String bankName, String branchName, String address, String isfcCode, String accountOpeningDate, String modeOfOperation, boolean isMobileBankingEnabled, long accountNumber, String accountHoldersName, double accountBalance, String accountStatus) {
         this.bankName = bankName;
         this.branchName = branchName;
         this.address = address;
@@ -28,6 +32,10 @@ public abstract class Bank {
         this.accountOpeningDate = accountOpeningDate;
         this.modeOfOperation = modeOfOperation;
         this.isMobileBankingEnabled = isMobileBankingEnabled;
+        this.accountNumber = accountNumber;
+        this.accountHoldersName = accountHoldersName;
+        this.accountBalance = accountBalance;
+        this.accountStatus = accountStatus;
     }
 
     public String getBankName() {
@@ -84,5 +92,37 @@ public abstract class Bank {
 
     public void setMobileBankingEnabled(boolean mobileBankingEnabled) {
         isMobileBankingEnabled = mobileBankingEnabled;
+    }
+
+    public long getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(long accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountHoldersName() {
+        return accountHoldersName;
+    }
+
+    public void setAccountHoldersName(String accountHoldersName) {
+        this.accountHoldersName = accountHoldersName;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
     }
 }
