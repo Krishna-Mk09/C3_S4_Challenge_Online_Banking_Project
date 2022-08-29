@@ -77,12 +77,7 @@ public class SavingsAccount extends Bank {
 
     @Override
     public String toString() {
-        return "SavingsAccount{" +
-                "accountNumber=" + accountNumber +
-                ", accountHoldersName='" + accountHoldersName + '\'' +
-                ", accountBalance=" + accountBalance +
-                ", accountStatus='" + accountStatus + '\'' +
-                '}';
+        return "SavingsAccount{" + "accountNumber=" + accountNumber + ", accountHoldersName='" + accountHoldersName + '\'' + ", accountBalance=" + accountBalance + ", accountStatus='" + accountStatus + '\'' + '}';
     }
 }
 
