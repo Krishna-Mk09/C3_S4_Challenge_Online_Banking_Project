@@ -10,12 +10,7 @@ package com.niit.jdp;
 
 public class SavingsAccountImpl {
     public static void main(String[] args) {
-        SavingsAccount savingsAccount = new SavingsAccount("indianOverSeas"
-                , "karimnagar"
-                , "234/235/kmr", "ioba332201"
-                , "23/08/2022", "ofline"
-                , true, 1234455566, "M vamshi krishna"
-                , 50000.0, "Active");
+        SavingsAccount savingsAccount = new SavingsAccount("indianOverSeas", "karimnagar", "234/235/kmr", "ioba332201", "23/08/2022", "ofline", true, 1234455566, "M vamshi krishna", 50000.0, "Active");
         System.out.println(savingsAccount.getBankName());
         System.out.println(savingsAccount.getBranchName());
         System.out.println(savingsAccount.getAddress());
