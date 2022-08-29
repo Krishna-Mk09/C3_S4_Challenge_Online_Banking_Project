@@ -14,4 +14,6 @@ public class Bank {
     private String address;
     private String isfcCode;
 
+    public Bank() {
+    }
 }
